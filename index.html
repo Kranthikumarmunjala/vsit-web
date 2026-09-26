@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VSIT Solution - Empowering IT Solutions</title>
+  <!-- Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="VS IT Logo" class="brand-logo" />
+        <span class="logo-brand-text">VS <span class="highlight">IT</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://wa.me/918125827064" target="_blank" class="nav-whatsapp" title="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Slider -->
+  <section class="hero-section" id="home">
+    <div class="slides-container">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-content">
+          <span class="badge">Enterprise Solutions</span>
+          <h1>Enterprise Application<br>Development</h1>
+          <p>Build scalable, robust enterprise applications that drive business growth. Our expert team delivers custom software solutions, web applications, and mobile apps tailored to your specific business requirements.</p>
+          <div class="hero-btns">
+            <a href="#solutions-section" class="btn btn-yellow">View Solutions</a>
+            <a href="#ready-transform" class="btn btn-outline">Get Consultation</a>
+          </div>
+          <div class="hero-stats">
+            <div><h3>10+</h3><p>Enterprise Apps</p></div>
+            <div><h3>99.9%</h3><p>Uptime</p></div>
+            <div><h3>24/7</h3><p>Support</p></div>
+          </div>
+        </div>
+        <div class="slide-image">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop" alt="Enterprise Application" />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-content">
+          <span class="badge badge-yellow">AI Productivity</span>
+          <h1>AI Productivity<br>Consultancy</h1>
+          <p>Boost your team's productivity with expert AI consultancy. Our specialists design custom AI strategies, deploy intelligent agents, and implement automation solutions that transform how your business operates.</p>
+          <div class="hero-btns">
+            <a href="#solutions-section" class="btn btn-yellow">Boost Productivity</a>
+            <a href="#ready-transform" class="btn btn-outline">Get AI Consultation</a>
+          </div>
+          <div class="hero-stats">
+            <div><h3>3+</h3><p>AI Projects</p></div>
+            <div><h3>85%</h3><p>Productivity Gain</p></div>
+            <div><h3>2+</h3><p>Years AI Experience</p></div>
+          </div>
+        </div>
+        <div class="slide-image">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop" alt="AI Productivity" />
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-content">
+          <span class="badge badge-green">Expert Consulting</span>
+          <h1>Strategic IT<br>Consulting</h1>
+          <p>Transform your technology landscape with expert guidance. Our consultants help you navigate digital transformation, optimize operations, and implement cutting-edge solutions that drive business success.</p>
+          <div class="hero-btns">
+            <a href="#solutions-section" class="btn btn-yellow">Our Expertise</a>
+            <a href="#ready-transform" class="btn btn-outline">Book Consultation</a>
+          </div>
+          <div class="hero-stats">
+            <div><h3>10+</h3><p>Expert Consultants</p></div>
+            <div><h3>5+</h3><p>Years Experience</p></div>
+            <div><h3>100%</h3><p>Success Rate</p></div>
+          </div>
+        </div>
+        <div class="slide-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="IT Consulting" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="slider-arrow prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slider-arrow next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="slider-dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- About / Mission Section -->
+  <section class="section-container" id="about">
+    <div class="section-title">
+      <span class="pill-badge"><i class="fa-solid fa-star"></i> Our Commitment to Excellence</span>
+      <h2>Transforming Businesses with Technology</h2>
+      <p class="subtitle">We are the innovators and technology leaders, empowering businesses with enterprise applications, AI solutions, strategic consulting, and digital transformation services.</p>
+    </div>
+
+    <div class="cards-grid-2">
+      <div class="feature-box">
+        <div class="box-header-img">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&auto=format&fit=crop" alt="Mission">
+          <div class="floating-icon"><i class="fa-solid fa-rocket"></i></div>
+        </div>
+        <div class="box-body">
+          <div class="tag-title"><i class="fa-solid fa-bullseye"></i> <h3>Our Mission</h3></div>
+          <p>At VSIT, we transform businesses through comprehensive technology solutions. From enterprise applications to AI innovation, we're not just another IT company – we're your strategic technology partner.</p>
+          <div class="mini-metrics">
+            <div><h4>20+</h4><span>Projects</span></div>
+            <div><h4>99.9%</h4><span>Success Rate</span></div>
+            <div><h4>24/7</h4><span>Support</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-box">
+        <div class="box-header-img">
+          <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&auto=format&fit=crop" alt="Expertise">
+          <div class="floating-icon"><i class="fa-solid fa-brain"></i></div>
+        </div>
+        <div class="box-body">
+          <div class="tag-title"><i class="fa-solid fa-gear"></i> <h3>Our Expertise</h3></div>
+          <p>Our team brings deep expertise in enterprise development, AI solutions, cloud infrastructure, and digital transformation strategies.</p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i> Enterprise Application Development</li>
+            <li><i class="fa-solid fa-circle-check"></i> AI & Machine Learning Solutions</li>
+            <li><i class="fa-solid fa-circle-check"></i> Strategic IT Consulting</li>
+            <li><i class="fa-solid fa-circle-check"></i> Cloud & Digital Transformation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation at Core Section -->
+  <section class="section-container">
+    <div class="innovation-card">
+      <div class="innovation-left">
+        <div class="tag-title"><i class="fa-regular fa-lightbulb"></i> <h2>Innovation at Core</h2></div>
+        <p>We push the boundaries of what's possible with agentic AI, creating intelligent systems that revolutionize how businesses operate.</p>
+        
+        <div class="core-list">
+          <div class="core-item">
+            <div class="core-icon"><i class="fa-solid fa-robot"></i></div>
+            <div>
+              <h4>Autonomous AI Agents</h4>
+              <p>Self-operating digital workers that handle complex tasks independently</p>
+            </div>
+          </div>
+          <div class="core-item">
+            <div class="core-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div>
+              <h4>Multi-Agent Orchestration</h4>
+              <p>Coordinated AI systems working together for optimal results</p>
+            </div>
+          </div>
+          <div class="core-item">
+            <div class="core-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h4>Continuous Optimization</h4>
+              <p>AI agents that learn and improve performance over time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="innovation-right">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&auto=format&fit=crop" alt="Workspace" />
+        <div class="stat-overlay">
+          <div><h3>20+</h3><p>Total Projects</p></div>
+          <div><h3>10+</h3><p>Enterprise Apps</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive IT Solutions (Target for View Solutions Button) -->
+  <section class="section-container" id="solutions-section">
+    <div class="section-title">
+      <span class="pill-badge"><i class="fa-solid fa-gears"></i> Premium IT Services</span>
+      <h2>Comprehensive IT Solutions</h2>
+      <p class="subtitle">From enterprise applications to AI innovation - we deliver end-to-end technology solutions that drive business growth and digital transformation.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card featured">
+        <span class="card-badge orange">Most Popular</span>
+        <div class="svc-icon orange"><i class="fa-solid fa-user-tie"></i></div>
+        <h3>AI Productivity Consultancy</h3>
+        <p>Transform your business with expert AI consultancy focused on boosting productivity. Our specialists identify opportunities and design AI strategies.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="card-badge blue">Productivity Boost</span>
+        <div class="svc-icon blue"><i class="fa-solid fa-robot"></i></div>
+        <h3>Intelligent AI Agents</h3>
+        <p>Deploy autonomous AI agents that work 24/7 to boost your team's productivity and handle routine tasks independently.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="svc-icon pink"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Enterprise App Development</h3>
+        <p>Build scalable, robust enterprise applications with cutting-edge technologies. From web applications to mobile apps.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="svc-icon green"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        <h3>Cloud & Infrastructure</h3>
+        <p>Modernize your IT infrastructure with secure cloud solutions, DevOps practices, and high-availability architectures.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="svc-icon cyan"><i class="fa-solid fa-chart-simple"></i></div>
+        <h3>Digital Transformation</h3>
+        <p>Transform your business processes with modern technology solutions. We help organizations embrace innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Stats Section -->
+  <section class="dark-stats-bar">
+    <div class="stat-col"><h2>20+</h2><p>Projects Delivered</p></div>
+    <div class="stat-col"><h2>10+</h2><p>Enterprise Apps</p></div>
+    <div class="stat-col"><h2>24/7</h2><p>Intelligent Support</p></div>
+    <div class="stat-col"><h2>2+</h2><p>Years AI Experience</p></div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="section-container" id="clients">
+    <div class="section-title">
+      <h2>Our Clients</h2>
+      <p class="subtitle">Trusted by leading companies worldwide</p>
+    </div>
+    <div class="client-logos">
+      <span class="c-logo c-red">MUFG</span>
+      <span class="c-logo c-green">Alstom</span>
+      <span class="c-logo c-blue">Brit</span>
+      <span class="c-logo c-navy">Booking.com</span>
+      <span class="c-logo c-orange">Emagine</span>
+      <span class="c-logo c-crimson">UBS</span>
+    </div>
+  </section>
+
+  <!-- Ready to Transform Your Business Section (Target for Consultation Button) -->
+  <section class="section-container" id="ready-transform">
+    <div class="section-title">
+      <span class="pill-badge"><i class="fa-solid fa-rocket"></i> Let's Build Something Amazing</span>
+      <h2>Ready to Transform Your Business?</h2>
+      <p class="subtitle">Transform your business with our comprehensive IT solutions. Let's discuss how our enterprise applications and AI consulting can accelerate your growth.</p>
+    </div>
+
+    <!-- Quick Contact Cards -->
+    <div class="contact-cards-grid">
+      <div class="contact-box">
+        <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+        <h4>Instant Connect</h4>
+        <p class="val">+91-8125827064</p>
+        <span class="status-pill">⚡ 24/7 Available</span>
+      </div>
+
+      <div class="contact-box">
+        <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+        <h4>Email Us</h4>
+        <p class="val">ceo@vsitsolutions.org</p>
+        <span class="status-pill">⚡ 2 Hour Response</span>
+      </div>
+
+      <div class="contact-box">
+        <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <h4>WhatsApp</h4>
+        <p class="val">Chat Instantly</p>
+        <span class="status-pill">⚡ Real-time Chat</span>
+      </div>
+
+      <div class="contact-box">
+        <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <h4>Visit Us</h4>
+        <p class="val">Visakhapatnam, Andhra Pradesh</p>
+        <span class="status-pill">📅 By Appointment</span>
+      </div>
+    </div>
+
+    <!-- Branch Locations -->
+    <div class="locations-grid">
+      <div class="branch-card">
+        <h3><i class="fa-solid fa-building"></i> VS IT Solutions - Vishakhapatnam</h3>
+        <p><i class="fa-solid fa-location-pin"></i> Back Side BVK college road</p>
+        <p><i class="fa-solid fa-road"></i> Line Dwarakanagar</p>
+        <p><i class="fa-solid fa-city"></i> Visakhapatnam, Andhra Pradesh, India</p>
+        <p><i class="fa-solid fa-phone"></i> +91-8125827064</p>
+        <div class="map-wrapper">
+          <iframe src="https://maps.google.com/maps?q=Dwaraka%20Nagar%20Visakhapatnam&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+
+      <div class="branch-card">
+        <h3><i class="fa-solid fa-building"></i> VS IT Solutions - Hyderabad</h3>
+        <p><i class="fa-solid fa-location-pin"></i> T-HUB Foundation, 1/C</p>
+        <p><i class="fa-solid fa-road"></i> 83/1, Raidurg, panmaktha</p>
+        <p><i class="fa-solid fa-city"></i> Hyderabad, Telangana</p>
+        <p><i class="fa-solid fa-phone"></i> +91-8125827064</p>
+        <div class="map-wrapper">
+          <iframe src="https://maps.google.com/maps?q=T-Hub%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-strip">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Get a free consultation and discover how our comprehensive IT solutions can accelerate your growth.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/918125827064" target="_blank" class="btn btn-white"><i class="fa-brands fa-whatsapp"></i> Start Now</a>
+        <a href="contact.html" class="btn btn-outline-white"><i class="fa-solid fa-calendar-days"></i> Book Call</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Valid Social Links -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="logo">
+          <img src="logo.png" alt="VS IT Logo" class="brand-logo" />
+          <span class="logo-brand-text text-white">VS <span class="highlight">IT Solution</span></span>
+        </div>
+        <p>Pioneering agentic AI solutions that transform businesses. We deploy autonomous AI agents that revolutionize operations.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/918125827064" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="services.html">AI Productivity Consultancy</a></li>
+          <li><a href="services.html">Intelligent AI Agents</a></li>
+          <li><a href="services.html">Enterprise App Development</a></li>
+          <li><a href="services.html">Cloud & Infrastructure</a></li>
+          <li><a href="services.html">Digital Transformation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="contact-info-list">
+          <li><i class="fa-solid fa-phone"></i> +91-8125827064</li>
+          <li><i class="fa-solid fa-envelope"></i> ceo@vsitsolutions.org</li>
+          <li><i class="fa-solid fa-location-dot"></i> Visakhapatnam, AP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 VS IT Solutions. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()" title="Scroll to Top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
