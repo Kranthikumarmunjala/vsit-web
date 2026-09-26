@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navigation Bar -->
+<!-- Navigation Bar -->
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">
@@ -19,11 +18,14 @@
         <span class="logo-brand-text">VS <span class="highlight">IT</span></span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <!-- ☰ హ్యాంబర్గర్ బటన్ (onclick డైరెక్ట్‌గా పెట్టాం) -->
+      <button class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu(event)" aria-label="Toggle menu">
         <i class="fa-solid fa-bars"></i>
       </button>
-      <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
+
+      <!-- లింక్స్ (ఇందులో id="navLinks" ఉండాలి) -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="#clients">Clients</a>
